@@ -1,0 +1,229 @@
+header{
+    background: linear-gradient(rgba(0, 0, 0, 0.589) , rgba(0, 0, 0, 0.604)) , url(../Data/hero.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+nav{
+    padding: 10px;
+    background: rgb(27, 139, 209);
+}
+nav ul{
+    display: flex;
+    margin-top: 7.5px;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: white;
+    text-decoration: underline;
+}
+nav h2{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav h2 span{
+    font-weight: bold;
+    color: rgb(0, 93, 156);
+}
+.textarea h2{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.textarea h2 span{
+    font-weight: bold;
+    color: rgb(0, 93, 156);
+}
+header .container{
+    padding-top: 15%;
+    color: white;
+    text-align: center;
+}
+header .container h1{
+    font-size: 3.5rem;
+    text-transform: capitalize;
+}
+header .container a{
+    text-decoration: none;
+    background-color: rgb(27, 139, 209);
+    color: white;
+    padding: 15px 30px;
+    box-shadow: blue 4px 4px;
+}
+header .container a:hover{
+    color: darkblue;
+    box-shadow: rgb(15, 111, 207) 4px 4px;
+    background-color: rgb(224, 224, 224);
+    transition: 1s;
+}
+#services{
+    margin-top: 30px;
+}
+#services h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#doctors h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#contact h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#serve{
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+    height: 52vh;
+    width: 24%;
+    text-align: center;
+    border-radius: 10%;
+    transform: scale(.9);
+}
+#serve:hover{
+    border-radius: 1%;
+    transform: scale(1);
+    transition: .5s;
+}
+#serve img{
+    margin-top: 10px;
+}
+#serve h3{
+    margin-top: 10px;
+}
+#row{
+    justify-content: space-between;
+}
+.card{
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.158);
+}
+#con{
+    display: flex;
+}
+.textarea{
+    background: rgb(27, 139, 209);
+    width: 50%;   
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.316);
+    padding: 15px 15px 0 15px;
+}
+.textarea p{
+    color: white;
+    opacity: .9;
+    font-size: 1.02rem;
+}
+.slideshow{
+    width: 50%;
+}
+#img{
+    width: 100% ; height:380px ;
+}
+#col4{
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.154);
+    padding: 20px;
+    text-align: center;
+}
+#col4 img{
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+#col4:hover{
+    transition: 1s;
+    transform: scale(1.05);
+}
+#col4 span{
+    font-weight: bold;
+    color: rgb(29, 114, 167) ;
+}
+#anotherRow{
+    display: flex;
+}
+.flexx{
+    display: flex;
+    justify-content: space-between;
+}
+.txt{
+    width: 48%;
+}
+.txt span{
+    opacity: .8;
+    font-weight: bolder;
+}
+.map{
+    width: 50%;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+footer{
+    background-color: rgb(21, 122, 189);
+    height: 40vh;
+    color: white;
+    padding: 15px;
+}
+footer h6{
+    font-weight: bolder;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: white;
+}
+@media screen and (max-width:750px){
+    header{
+        background-position: center; 
+    }
+    nav ul{
+        display: none;
+    }
+    nav h2{
+        margin: auto;
+    }
+    header .container h1{
+        font-size: 2.5rem;
+        margin-top: 150px;
+    }
+    #row{
+        flex-direction: column;
+    }
+    #col4{
+        margin-bottom: 20px;
+    }
+    #col4:hover{
+        transform: scale(.9);
+    }
+    #serve{
+        width: 100%;
+        height: 45vh;
+    }
+    #serve:hover{
+        transform: scale(.95);
+    }
+    #block{
+        flex-direction: column;
+    }
+    .card{
+        width: 95vw;
+        margin-bottom: 20px;
+    }
+    #con{
+        flex-direction: column;
+    }
+    .slideshow{width: 100%;}
+    .textarea{width: 100%;}
+    #img{   
+        height: 300px;
+    }
+    .flexx{
+        flex-direction: column;
+    }
+    .txt{width: 100%;}
+    .map{width: 100%;}
+}
